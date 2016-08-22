@@ -21,11 +21,11 @@ body {
 
     li {
       display: inline-block;
-      padding: 0 12px;
 
       a {
         color: rgba(255, 255, 255, 0.6);
         line-height: 60px;
+        padding: 0 12px;
 
         &:hover {
           color: white;
@@ -51,6 +51,8 @@ body {
 
         img {
           height: 32px;
+          position: relative;
+          top: 5px;
         }
       }
 
