@@ -1,0 +1,67 @@
+body {
+  background: #22283D;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+::selection {
+  background: rgba(163, 57, 70, 0.7);
+}
+
+.site-header {
+  background: #171B2A;
+  padding: 0 24px;
+
+  .trigger {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0 12px;
+
+      a {
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 60px;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+    }
+
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .site-nav {
+
+      display: flex;
+      align-items: center;
+
+      .site-logo {
+
+        margin-right: 64px;
+
+        img {
+          height: 32px;
+        }
+      }
+
+    }
+
+    .contact-list {
+
+    }
+
+
+
+  }
+
+}
