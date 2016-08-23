@@ -21,6 +21,12 @@ body {
   background: #171B2A;
   padding: 0 24px;
 
+  .wrapper {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+
   .trigger {
     margin: 0;
     padding: 0;
@@ -58,8 +64,8 @@ body {
         margin-right: 64px;
 
         img {
+          width: 67px;
           height: 32px;
-          width: 112px;
           position: relative;
           top: 5px;
         }
