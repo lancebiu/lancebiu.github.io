@@ -1,0 +1,41 @@
+.post-list {
+
+  background: rgba(0, 0, 0, 0.3);
+  list-style: none;
+  margin: 0;
+  padding: 16px 0;
+
+  >li {
+    padding: 16px;
+
+    .post-link {
+      color: white;
+      font-size: 36px;
+      line-height: 52px;
+      text-shadow: 3px 3px rgba(199, 58, 78, 0.5), 6px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .post-info {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin: 0 16px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+
+      a {
+        color: #995BB3;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+
+
+}

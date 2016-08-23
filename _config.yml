@@ -10,4 +10,6 @@ github: "https://github.com/lancebiu"
 weibo: "http://weibo.com/u/5337869639"
 email: "2437844933@qq.com"
 
+paginate: 8
+
 markdown: kramdown

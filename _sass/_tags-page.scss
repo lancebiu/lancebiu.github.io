@@ -1,0 +1,38 @@
+.tags {
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .tag-list {
+    padding: 24px 0;
+    margin-bottom: 36px;
+    border-bottom: 3px dashed rgb(199, 58, 78);
+    li {
+      margin: 0 4px;
+    }
+  }
+
+  .tag-post-list {
+
+    li {
+
+      display: flex;
+      align-items: center;
+
+      a {
+        color: #995BB3;
+        font-size: 18px;
+        margin-right: 24px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+
+
+    }
+
+  }
+
+}

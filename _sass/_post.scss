@@ -1,8 +1,26 @@
-.post {
+.tag-list {
 
-  width: 100%;
-  max-width: 840px;
-  margin: 0 auto;
+  padding: 0;
+  -webkit-padding-start: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: white;
+      background: #C73A4E;
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+
+  }
+}
+
+.post {
   padding: 64px 24px;
 
   .post-header {
@@ -10,6 +28,7 @@
     .post-title {
       color: white;
       font-size: 42px;
+      line-height: 56px;
       text-shadow: 3px 3px rgba(199, 58, 78, 0.5), 6px 6px rgba(0, 0, 0, 0.7);
       padding-bottom: 36px;
       border-bottom: 8px double #C73A4E;
@@ -20,29 +39,6 @@
       justify-content: space-between;
       align-items: center;
     }
-
-    .tag-list {
-
-      padding: 0;
-      -webkit-padding-start: 0;
-      margin: 0;
-      list-style: none;
-
-      li {
-        display: inline-block;
-
-        a {
-          color: white;
-          background: #C73A4E;
-          box-shadow: 3px 3px rgba(0, 0, 0, 0.6);
-          padding: 4px 8px;
-          border-radius: 4px;
-          margin-right: 4px;
-        }
-
-      }
-    }
-
   }
 
   .post-content {
@@ -77,7 +73,7 @@
     h2 {
       font-size: 36px;
       color: #C73A4E;
-      text-shadow: 3px 3px rgba(199, 58, 78, 0.5), 5px 5px rgba(0, 0, 0, 0.8);
+      text-shadow: 1px 1px rgba(199, 58, 78, 0.5), 2px 2px rgba(0, 0, 0, 0.8);
       margin: 64px 0 32px 0;
       padding-top: 32px;
       border-top: 1px dashed #C73A4E;

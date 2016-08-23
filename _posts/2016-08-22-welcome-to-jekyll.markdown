@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Using ECharts with Angular.js
-date:   2016-08-23 00:22:54 +0800
-author: lance
+excerpt: "[ECharts](http://echarts.baidu.com) is a powerful JavaScript library to make amazing charts. This post introduces how to use ECharts in [*MVW*](http://stackoverflow.com/questions/13329485/mvw-what-does-it-stand-for) style."
+date:   2016-08-22 00:22:54
 permalink: /using-echarts-with-angularjs/
 tags:
 - AngularJs

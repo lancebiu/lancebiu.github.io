@@ -10,6 +10,13 @@ body {
   background: rgba(163, 57, 70, 0.7);
 }
 
+.page-content {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
 .site-header {
   background: #171B2A;
   padding: 0 24px;
@@ -27,7 +34,8 @@ body {
         line-height: 60px;
         padding: 0 12px;
 
-        &:hover {
+        &:hover,
+        &.current{
           color: white;
         }
       }
@@ -51,6 +59,7 @@ body {
 
         img {
           height: 32px;
+          width: 112px;
           position: relative;
           top: 5px;
         }

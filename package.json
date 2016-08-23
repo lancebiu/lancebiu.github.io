@@ -4,8 +4,8 @@
   "description": "lancebiu's blog",
   "main": "index.js",
   "scripts": {
-      "update": "bundle update",
-      "dev": "bundle exec jekyll serve"
+    "update": "bundle update",
+    "dev": "bundle exec jekyll serve"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lancebiu/lancebiu.github.io/issues"
   },
-  "homepage": "https://github.com/lancebiu/lancebiu.github.io#readme"
+  "homepage": "https://github.com/lancebiu/lancebiu.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
