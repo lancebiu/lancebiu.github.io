@@ -5,7 +5,6 @@ excerpt: "浏览器缓存对于提升web性能的作用是不言而喻的,这篇
 date: 2016-08-23 09:11:34
 permalink: /browser-cache/
 tags:
-- Performance
 - HTTP
 ---
 
