@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Javascript 面向对象编程(1)
+excerpt: "本文主要介绍了JavaScript面向对象编程中一些比较重要的概念--对象,类,原型"
 date: 2016-08-23 09:11:34
 permalink: /javascript-object-oriented/
 tags:
