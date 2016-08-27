@@ -14,18 +14,13 @@ body {
   width: 100%;
   max-width: 840px;
   margin: 0 auto;
-  padding: 64px 0 0;
+  padding: 64px 16px 0;
+  box-sizing: border-box;
 }
 
 .site-header {
   background: #171B2A;
   padding: 0 24px;
-
-  .wrapper {
-    width: 100%;
-    max-width: 840px;
-    margin: 0 auto;
-  }
 
   .trigger {
     margin: 0;
@@ -51,6 +46,9 @@ body {
   }
 
   .wrapper {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 
@@ -76,9 +74,27 @@ body {
     .contact-list {
 
     }
-
-
-
   }
+}
 
+@media screen and (max-width: 760px){
+  .site-header {
+      .wrapper {
+        display: block;
+        .trigger {
+          text-align: center;
+          li a{
+            line-height: 36px;
+          }
+        }
+        .site-nav {
+          display: block;
+          .site-logo {
+            width: 100%;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+   }
 }
