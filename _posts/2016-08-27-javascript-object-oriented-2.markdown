@@ -100,6 +100,6 @@ var mike = new Man('mike', 18);
 
 ![](http://ocd7f3wcw.bkt.clouddn.com/Screen%20Shot%202016-08-27%20at%2010.32.18%20PM.png)
 
-原型链为 `Man.prototype ---> Person.prototype ---> Object.prototype ---> null`
+原型链为 `mike ---> Man.prototype ---> Person.prototype ---> Object.prototype ---> null`
 
 可以看到,mike的原型链中有Person.prototype,所以mike也就拥有了Person这个类的属性和方法。

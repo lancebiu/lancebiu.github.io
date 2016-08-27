@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69ec61c-fb1b-42bd-a5cb-bec1306fc387" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-08-27-javascript-object-oriented-2.markdown" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2016-08-26-javascript-object-oriented.markdown" afterPath="$PROJECT_DIR$/_posts/2016-08-26-javascript-object-oriented-1.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-23-browser-cache.markdown" afterPath="$PROJECT_DIR$/_posts/2016-08-23-browser-cache.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_post.scss" afterPath="$PROJECT_DIR$/_sass/_post.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-27-javascript-object-oriented-2.markdown" afterPath="$PROJECT_DIR$/_posts/2016-08-27-javascript-object-oriented-2.markdown" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +76,8 @@
       <file leaf-file-name="2016-08-27-javascript-object-oriented-2.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2016-08-27-javascript-object-oriented-2.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="505">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -374,12 +371,12 @@
       <workItem from="1472108130439" duration="657000" />
       <workItem from="1472203454546" duration="12961000" />
       <workItem from="1472276865890" duration="3615000" />
-      <workItem from="1472304190763" duration="2265000" />
+      <workItem from="1472304190763" duration="2365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55969000" />
+    <option name="totallyTimeSpent" value="56069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="23" width="960" height="1020" extended-state="0" />
@@ -749,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-08-27-javascript-object-oriented-2.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state relative-caret-position="505">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>
