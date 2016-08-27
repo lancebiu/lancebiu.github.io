@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 浏览器缓存详解
-excerpt: "浏览器缓存对于提升web性能的作用是不言而喻的,这篇文章介绍一些浏览器的缓存机制"
+excerpt: "浏览器缓存对于提升web性能的作用是不言而喻的,这篇文章介绍一些浏览器的缓存机制。"
 date: 2016-08-23 09:11:34
 permalink: /browser-cache/
 tags:

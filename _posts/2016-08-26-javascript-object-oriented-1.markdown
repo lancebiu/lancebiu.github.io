@@ -1,27 +1,27 @@
 ---
 layout: post
 title: Javascript 面向对象编程(1)
-excerpt: "本文主要介绍了JavaScript面向对象编程中一些比较重要的概念--对象,类,原型"
-date: 2016-08-23 09:11:34
-permalink: /javascript-object-oriented/
+excerpt: "本文主要介绍了JavaScript面向对象编程中一些比较重要的概念--对象,类,原型。"
+date: 2016-08-26 10:11:34
+permalink: /javascript-object-oriented-1/
 tags:
-- Javascript
+- JavaScript
 ---
 
 ## 概述
 
 JavaScript的数据分为两类: 原始类型和对象类型。
 
-原始类型有4种:
+原始类型有6种:
 
 >+ 数值
 >+ 字符串
 >+ 布尔值
 >+ Symbol(ES6新增)
+>+ null
+>+ undefined
 
-Javascript还有两个特殊的值: `null`和`undefined`。它们是各自类型的唯一成员。
-
-除了上述的原始类型,null,undefined以外,其他的数据类型都是对象了。
+除了上述的原始类型外,其他的数据类型都是对象了。
 
 对象类型有可以分为三个子类型
 
@@ -135,7 +135,7 @@ var eddie = new Dog('eddie');
 ```javascript
 var o = new Object();
 o.__proto__ = Dog.prototype;
-Dog.call(this,);
+Dog.call(this, name);
 var eddie = o;
 ```
 
