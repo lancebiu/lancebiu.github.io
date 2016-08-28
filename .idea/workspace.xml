@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69ec61c-fb1b-42bd-a5cb-bec1306fc387" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2016-08-22-todolist.markdown" afterPath="$PROJECT_DIR$/_posts/2016-10-29-todolist.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-28-common-web-layout.markdown" afterPath="$PROJECT_DIR$/_posts/2016-08-28-common-web-layout.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_post.scss" afterPath="$PROJECT_DIR$/_sass/_post.scss" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,21 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-08-28-common-web-layout.markdown" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2016-08-28-common-web-layout.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2016-08-28-common-web-layout.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-10-29-todolist.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-10-29-todolist.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-10-29-todolist.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="144">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -182,10 +179,10 @@
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/_includes/comments.html" />
         <option value="$PROJECT_DIR$/_sass/_post.scss" />
-        <option value="$PROJECT_DIR$/_posts/2016-08-28-common-web-layout.markdown" />
         <option value="$PROJECT_DIR$/_sass/_layout.scss" />
         <option value="$PROJECT_DIR$/_posts/2016-08-22-todolist.markdown" />
         <option value="$PROJECT_DIR$/_posts/2016-10-29-todolist.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2016-08-28-common-web-layout.markdown" />
       </list>
     </option>
   </component>
@@ -397,12 +394,12 @@
       <workItem from="1472108130439" duration="657000" />
       <workItem from="1472203454546" duration="12961000" />
       <workItem from="1472276865890" duration="3615000" />
-      <workItem from="1472304190763" duration="8412000" />
+      <workItem from="1472304190763" duration="8551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62116000" />
+    <option name="totallyTimeSpent" value="62255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="23" width="960" height="1020" extended-state="0" />
@@ -775,18 +772,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-28-common-web-layout.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-10-29-todolist.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-10-29-todolist.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-28-common-web-layout.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="72">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
           <folding />
         </state>
       </provider>
