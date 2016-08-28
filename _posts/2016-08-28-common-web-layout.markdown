@@ -3,7 +3,7 @@ layout: post
 title: 自适应三栏布局的实现
 excerpt: "三栏布局是web中常见的一种布局方式, 通常的要求是要实现页面自适应, 不管在实际应用还是面试中都是经常遇到的,本文介绍了我自己掌握并经常使用的三种方法。"
 date: 2016-08-27 00:17:24
-permalink: /common-web-layout/
+permalink: /three-column-layout/
 tags:
 - CSS
 - 布局

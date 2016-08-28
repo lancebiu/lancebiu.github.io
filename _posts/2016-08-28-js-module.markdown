@@ -1,0 +1,194 @@
+---
+layout: post
+title: JavaScript 模块化
+excerpt: "随着web的发展, 网站中应用的JavaScript代码规模越来越庞大, 维护和开发越发困难, 因此模块化开发已成为一个迫切的需求。本文主要介绍几个常见的模块化实现规范。"
+date: 2016-08-28 04:15:24
+permalink: /js-module/
+tags:
+- JavaScript
+---
+
+## 前言
+
+随着web的发展, 网站的应用的JavaScript代码规模越来越庞大,  维护和开发越发困难, 因此模块化开发已成为一个迫切的需求。
+本文主要介绍模块化带来的好处以及如何进行模块化开发。
+
+## 为什么使用模块化
+
+使用模块化能为我们解决一些开发过程中常见的问题, 比如:
+
+#### 避免命名冲突
+
+在JavaScript中, 所有未在函数中声明的变量都是全局的, 能够被所有人访问。因此, 全局变量的污染使得命名经常出现冲突从而引起很多问题。
+
+```javascript
+// a.js
+function add(a, b) {
+    return a+b;
+}
+
+add(2, 3);
+
+// b.js
+function add(a) {
+    return a+1;
+}
+```
+
+A和B合作一个项目, A在他写的`a.js`中声明了一个add方法, 用的很开心。后来B也在他写的`b.js`中声明了一个add方法, b用的很开心, 但是A
+找上门了, "我的代码怎么出错了?"。查到原因之后, B只好换了一个函数名字, 改成addOne。 问题暂时解决了, 但是长此以往, 他们之间的约定也
+变得越来越多, 大量的命名的约定让团队的开发和维护陷入了困境。
+
+而模块化的出现很好的解决了这个问题, 模块允许我们为每个模块创建一个独立的空间, 以避免空间污染, 减少命名冲突。
+
+#### 管理文件依赖
+
+随着网站的开发, JavaScript代码越来越多, 文件也越来越多, 会出现下面的情形。
+
+```html
+<script src='a.js'></script>
+<script src='b.js'></script>
+<script src='c.js'></script>
+<script src='d.js'></script>
+<script src='e.js'></script>
+...
+```
+
+这样的写法有很大缺点。加载文件越多, 网络请求数就越多, 这不利于网站的性能。其次, 由于js文件之间存在着依赖关系, 如果一个js文件中需要用到另一个
+js文件中的某些功能, 那么它就要在在另一个文件后面加载。因此, 为了让js之间正常工作, 必须严格保证加载顺序。当依赖关系很复杂时, 代码的编写和维护
+就会变得困难。
+
+模块化允许我们在模块中配置本模块的依赖模块, 从而很好的管理模块之间的依赖性, 使得开发和维护变得更简单。
+
+## 如何实现模块化
+
+目前实现模块化有两个比较受大家肯定的方法: CommonJS 和 AMD。
+
+### CommonJS
+
+CommonJS的提出, 就是为了弥补当前JavaScript没有标准库的缺陷, 它的终极目标是提供一个类似Python, Ruby和Java标准库。它期望那些用CommonJS API
+编写的应用可以具备跨宿主环境的能力。CommonJS规范涵盖模块, 二进制Buffer, 字符集编码, I/O流, 进程环境, 文件系统, 套接字, 单元测试, Web服务器
+网关接口, 包管理等。NodeJS也是借鉴了CommonJS规范。
+
+CommonJS对模块的定义十分简单, 主要分为模块定义, 模块应用, 模块标识三个部分。
+
+#### 模块定义
+
+CommonJS中, 一个文件就是一个模块。在模块中存在一个exports对象用于对外暴露API, 并且`它是模块对外暴露API的唯一出口`。在模块中,还存在
+一个module对象, 它代表模块自身。
+
+```javascript
+// a.js
+exports.add = function(a, b) {
+    return a + b;
+}
+
+exports.minus = function(a, b) {
+    return a - b;
+}
+```
+
+上述代码我们定义了一个模块a, 并定义了模块a对外输出的两个接口。
+
+#### 引入模块
+
+CommonJS 提供了 `require()` 方法, 该方法接受一个模块标识, 以此引入指定的模块。
+
+```javascript
+// b.js
+var math = require('a');
+math.add(1, 2);     // 3
+math.minus(3, 2);   // 1
+```
+
+上面的代码中d模块引入了我们刚刚定义的a模块, 并在b模块中使用。
+
+#### 模块标识
+
+模块标识就是传给require()方法的参数, 它必须是符合驼峰命名的字符串, 或者以`.`, `..`开头的相对路径, 或者绝对路径。它可以没有.js后缀。
+
+***
+
+##### CommonJS 优点
+
+通过使用CommonJS, 我们先前讨论的那些问题都得到了有效解决。
+
+> 1. 避免全局变量污染。定义在每个模块中的变量都只为模块自身所拥有, 不会污染全局变量。
+> 2. 明确依赖关系。模块依赖哪个模块就引入哪个模块, 模块之间的依赖关系一目了然。
+
+##### CommonJS 弊端
+
+CommonJS加载模块是同步的, 所以如果我们在一个模块中依赖了三个模块, 那么我们就需要等着这三个模块一个接一个的加载完成之后才能执行后面的操作。
+像Node.js主要用于服务器的编程,加载的模块文件一般已经存在本地硬盘,所以加载起来比较快,不用考虑异步加载的方式,所以CommonJS比较适用。但是对
+于浏览器, 这确实一个大问题, 所有的模块都在服务器端, 同步加载时, 等待时间可能要很长, 这段时间浏览器会处于"假死"状态。
+
+```javascript
+// d.js
+var a = require(a);
+var b = require(b);
+var c = require(c);
+
+// other operation
+```
+
+上述代码, 如果a, b, c 三个模块分别需要1s才能加载完成, 则采用CommonJS需要等到3s后模块d才会执行后续的操作, 并且在这期间, 浏览器会失去响应。
+
+因此, 浏览器端的模块, 不能采用同步加载的方式, 只能采用异步记载。所以就有了AMD解决方案。
+
+### AMD
+
+AMD(Asynchronous Module Definition)是[RequireJS](http://requirejs.org/)在推广过程中对模块定义的规范化产出。
+
+AMD采用异步方式加载模块, 并指定一个回调函数, 在所有模块加载完成后这个回调函数才会运行。
+
+AMD也采用require()语句加载模块, 它要求两个参数:
+
+```javascript
+require([dependencies], factory);
+```
+
+第一个参数[dependencies], 是一个数组, 里面的成员就是依赖的模块; 第二个参数就是依赖模块加载完之后的回调函数。还是用上面加载a模块的例子
+
+```javascript
+// d.js
+define(['a', 'b', 'c'], function(a, b, c) {
+    // other operation
+));
+```
+
+上述代码定义了d模块, d模块会先异步加载a, b, c 三个模块,在三个模块加载完成后才会去执行回调函数。由于三个模块是异步加载的, 所以只需要1s就可以加载
+完成, 同时在此期间, 浏览器不会失去响应。
+
+AMD与CommonJS另一个不同之处在于, AMD的模块可以返回任何值, 可以是对象, 也可以是数组, 甚至是函数。但是CommonJS的模块标准指明模块只能通过exports
+对象对外暴露API, 所以你不得不把需要导出的东西添加到exports对象上。
+
+你在AMD中可以这样写:
+
+```javascript
+// add.js
+define([], function(){
+    return function(a, b) {
+        return a + b;
+    }
+})
+
+// demo.js
+define(['add'], function(add) {
+    add(1, 2);      // 3
+})
+```
+
+而使用CommonJS, 你却只能这样:
+
+```javascript
+// add.js
+exports.add = function(a, b) {
+    return a + b;
+}
+
+// demo.js
+var math = require('add');
+math.add(1, 2);     // 3
+```
+
+> NodeJS 支持通过`module.exports = function(){}` 这种方式返回函数或任何值, 但这并不是CommonJS标准的一部分。
