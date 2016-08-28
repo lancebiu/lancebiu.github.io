@@ -2,7 +2,7 @@
 layout: post
 title: 想写的东西
 excerpt: "就当做一些记录吧"
-date: 2016-08-22 00:17:24
+date: 2016-10-29 00:17:24
 permalink: /todo-list/
 tags:
 - 杂谈
@@ -15,7 +15,6 @@ tags:
 + this
 + Ajax
 + Promise
-+ 布局
 + webpack
 + gulp
 + 模块化
