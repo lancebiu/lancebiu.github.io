@@ -33,7 +33,7 @@ tags:
 
 ### 方法3:
 
-![](http://ocd7f3wcw.bkt.clouddn.com/Screen%20Shot%202016-08-28%20at%202.25.27%20PM.png)
+![](http://ocd7f3wcw.bkt.clouddn.com/Screen%20Shot%202016-08-28%20at%202.52.05%20PM.png)
 
 这个方法用了Flexbox, 想了解更多关于Flexbox的知识,请戳[这篇文章](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)。
 
