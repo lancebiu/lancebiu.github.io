@@ -1,0 +1,24 @@
+---
+layout: post
+title: 想写的东西
+excerpt: "就当做一些记录吧"
+date: 2016-08-22 00:17:24
+permalink: /todo-list/
+tags:
+- 杂谈
+---
+
+
+## 有很多想写的东西
+
++ 闭包
++ this
++ Ajax
++ Promise
++ 布局
++ webpack
++ gulp
++ 模块化
++ 动画
+
+慢慢来吧
