@@ -2,7 +2,7 @@
 layout: post
 title: web中的跨域请求--JSONP
 excerpt: ""
-date: 2016-09-05 09:23:32
+date: 2016-09-06 09:23:32
 permalink: /cross-domain-request-jsonp/
 tags:
 - JavaScript

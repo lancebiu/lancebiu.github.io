@@ -16,7 +16,7 @@ CORS 是 Cross-Origin Resource Sharing 的缩写, 全称是"跨域资源共享"�
 它是一个W3C标准, 它允许浏览器向跨域服务器, 发出XMLHttpRequest请求, 从而克服了AJAX只能同源使用的限制。
 
 CORS 需要浏览器和服务器同时支持。CORS 标准通过新增一系列HTTP头, 让服务器能声明哪些来源可以通过浏览器访问该服务器上的资源。在浏览器端整个
-过程是自动完成的, 不需要用户参与, 和同源AJAX通信的代码几乎一样。浏览器一旦发现AJAX请求跨域, 就会自动添加一些附加的头信息, 优惠还会多出一次
+过程是自动完成的, 不需要用户参与, 和同源AJAX通信的代码几乎一样。浏览器一旦发现AJAX请求跨域, 就会自动添加一些附加的头信息, 有时还会多出一次
 附加的请求, 但这些对用户是透明的。
 
 CORS 的浏览器支持情况如下图所示
@@ -216,7 +216,7 @@ Access-Control-Allow-Credentials: true
 ### 服务器端实现
 
 对于简单的 CORS 请求, 服务器只需要在响应头中添加`Access-Control-Allow-Origin: *` 即可, 如果有更多需求, 比如安全性等等, 可以在响应头
-中做更多配置。 这里有[一份列表](http://enable-cors.org/server.html), 列举了常见的服务器如果支持 CORS。
+中做更多配置。 这里有[一份列表](http://enable-cors.org/server.html), 列举了常见的服务器如何果支持 CORS。
 
 
 ## CORS 和 JSONP 的比较
