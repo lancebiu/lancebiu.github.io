@@ -2,7 +2,7 @@
 layout: post
 title: web中的跨域请求--CORS
 excerpt: ""
-date: 2016-09-05 12:12:23
+date: 2016-09-06 12:12:23
 permalink: /cross-domain-request-cors/
 tags:
 - JavaScript
