@@ -228,7 +228,7 @@ console 标签会有错误信息, 错误信息中包含了每个内联脚本正�
 
 ![](http://ocd7f3wcw.bkt.clouddn.com/Screen%20Shot%202016-09-07%20at%2011.03.01%20PM.png)
 
-## Eval
+## Eval也存在风险
 
 尽管攻击者不能直接注入脚本, 他也可能会使用一些把字符串转换成可执行的 JavaScript 代码的方式进行攻击。比如eval(), new Function(),
 setTimeout([string], ...) 和 setInterval([string], ...) 这些载体都有可能会导致一些恶意代码的执行。CSP 对这个问题的处理方式, 就是
