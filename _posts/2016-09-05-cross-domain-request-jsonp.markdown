@@ -27,7 +27,7 @@ tags:
 >+ DOM无法获得。
 >+ AJAX请求无法发送。
 
-本文和![下一篇文章]()主要讲的是如何处理第三种情况, 分享两种方法:
+本文和[下一篇文章](http://devdeeper.com/cross-domain-request-cors/)主要讲的是如何处理第三种情况, 分享两种方法:
 
 >+ JSONP
 >+ CORS
